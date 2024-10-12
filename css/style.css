@@ -1,0 +1,149 @@
+header,
+footer {
+  background: #344046;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+}
+
+#menu1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+}
+
+#menu1 ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+#menu1 ul li {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+#menu1 ul li a {
+  font-family:'Embed code',sans-serif;
+  padding: 9px 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+ transition: transfrom 0.3s;
+}
+#menu1 ul li a:hover{
+  transform: scale(1.1) rotate(-5deg);
+  color: darkgray;
+}
+
+#menu1 ul li ul {
+  position: absolute;
+  top: 36px;
+  display: none;
+  width: 200px;
+  background: #616161;
+}
+
+#menu1 ul li:hover ul {
+  display: block;
+}
+
+#menu1 ul li ul li {
+  float: none;
+  width: 100%;
+}
+
+#menu1 ul li ul li a {
+  padding: 7px 25px;
+  color: white;
+  border-top: 1px solid #fff;
+}
+
+
+main {
+  padding: 10px;
+  background-color: rgb(153, 153, 153);
+}
+
+.posts {
+  display: flex;
+}
+.nav{
+  display: flex;
+}
+.post {
+  display: flex;
+  background-color: rgb(97, 97, 97);
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  width: 700px;
+
+}
+.post p{
+  font-family: 'Afacad Flux' sans-serif;
+}
+.post img {
+  margin: 20px;
+  transition: transform 0.5s;
+}
+.post-info{
+  color: #616161;
+}
+.post img:hover{
+  transform: rotate(360deg);
+}
+
+.post-info {
+  color: grey;
+}
+
+
+
+.carousele {
+  margin: 10px;
+  max-width: 100%; 
+ 
+}
+.carousele-element {
+  margin: 40px;
+}
+.carousele div img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.slick-prev, .slick-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.slick-dots li button:before {
+  color: #000; /* Колір крапок */
+  font-size: 30px;
+}
+
+.footer-columns {
+  display: flex;
+}
+
+.footer-column {
+  flex: 50%;
+  margin: 20px;
+}
+
+
+
+
+/* ДЗ №5 вам потрібно на posts поставити display:flex; та в post зробити margin щоб були відступи */
